@@ -29,8 +29,8 @@ h1 {
 }
 
 .card {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     position: relative;
     transform-style: preserve-3d;
     transition: transform 0.6s;
@@ -61,6 +61,14 @@ h1 {
     transform: rotateY(180deg);
 }
 
+/* 縮小圖片的樣式 */
+.card-front img,
+.card-back img {
+    width: 100%; /* 設置圖片的寬度為100% */
+    height: auto; /* 高度自動調整，保持比例 */
+    border-radius: 8px; /* 與卡片的圓角一致 */
+}
+
 /* 按鈕樣式 */
 button {
     padding: 10px 20px;
@@ -83,4 +91,3 @@ button:hover {
     font-size: 20px; /* 計時器字型大小 */
     color: #34495e; /* 計時器顏色 */
 }
-
